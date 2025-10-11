@@ -11,16 +11,16 @@ import AppProviders from "@/components/app-providers"
 import { WhyTeachersChooseSection } from "@/components/why-teachers-choose"
 
 export const metadata: Metadata = {
-  title: "Meritranker - AI-Powered Learning for Govt Exams",
+  title: "Meritranker | AI Learning App & Teacher Tools for Govt & Competitive Exam Preparation",
   description:
-    "Meritranker is an AI-powered learning platform for Indian government exam preparation. Learn from your favorite teachers, practice with mocks & quizzes, manage notes, and master subjects in one app.",
+    "Meritranker is an AI learning app for students and teachers. Create smart study materials, prepare for UPSC, government, and competitive exams with free AI tools.",
   alternates: {
     canonical: "https://meritranker.com/",
   },
   openGraph: {
-    title: "Meritranker: Learn. Practice. Rank.",
+    title: "Meritranker – AI Learning App for Students & Smart Teacher Tools for Exam Preparation",
     description:
-      "All-in-one EdTech platform for Indian govt exam prep. AI study planner, mock tests, teacher branding, and student success.",
+      "Meritranker empowers students and teachers with AI tools for UPSC, government, and competitive exam preparation. Create and learn from smart study materials for free.",
     url: "https://meritranker.com/",
     images: [
       {

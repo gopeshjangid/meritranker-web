@@ -15,27 +15,27 @@ const inter = Inter({
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "eSIM Myanmar",
-  url: "https://esim.com.mm",
-  logo: "https://esim.com.mm/logo.png", // ENSURE public/logo.png exists (e.g., 112x112px or larger, square or rectangular)
+  name: "Merit Ranker",
+  url: "https://meritranker.com/",
+  logo: "https://meritranker.com/logo.png", // ENSURE public/logo.png exists (e.g., 112x112px or larger, square or rectangular)
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+959650000172",
+      telephone: "+91 9876543210",
       contactType: "customer service",
       areaServed: "MM",
-      availableLanguage: ["Burmese", "English"],
+      availableLanguage: ["English", "Hindi"],
     },
     {
       "@type": "ContactPoint",
-      email: "info@esim.com.mm",
+      email: "info@meritranker.com",
       contactType: "customer service",
       areaServed: "MM",
-      availableLanguage: ["Burmese", "English"],
+      availableLanguage: ["English", "Hindi"],
     },
   ],
   sameAs: [
-    "https://x.com/eSIMMyanmar", // REPLACE with your actual primary social media link
+    "https://x.com/meritRanker", // REPLACE with your actual primary social media link
     // "https://www.facebook.com/eSIMMyanmar", // Example: Add other social media links
     // "https://www.linkedin.com/company/esimmyanmar", // Example
   ],
@@ -43,40 +43,35 @@ const organizationSchema = {
 
 // Metadata for SEO and Social Sharing
 export const metadata: Metadata = {
-  metadataBase: new URL("https://esim.com.mm"), // Crucial for resolving relative image paths
+  metadataBase: new URL("https://meritranker.com/"), // Crucial for resolving relative image paths
   title: {
-    default: "eSIM Myanmar - Instant Digital SIMs for Myanmar | Fast & Easy Activation",
-    template: "%s | eSIM Myanmar",
+    default: "Meritranker | AI Learning App & Teacher Tools for Govt & Competitive Exam Preparation",
+    template: "Meritranker - AI-Powered Learning",
   },
   description:
-    "Get your eSIM for Myanmar instantly. Choose from top providers like ATOM, Mytel, Ooredoo. Easy activation with MyanmarPay. Secure, reliable, and GSMA compliant. Contact: 09650000172, info@esim.com.mm.",
+    "Meritranker is an AI learning app for students and teachers. Create smart study materials, prepare for UPSC, government, and competitive exams with free AI tools.",
   keywords: [
-    "eSIM Myanmar",
-    "digital SIM Myanmar",
-    "Myanmar eSIM",
-    "ATOM eSIM",
-    "Mytel eSIM",
-    "Ooredoo eSIM",
-    "MyanmarPay",
-    "travel SIM Myanmar",
-    "eSIM activation",
-    "GSMA compliant eSIM",
+    "teacher tools online",
+    "ai learning app",
+    "ai for govt exam preparation",
+    "free ai for upsc preparation",
+    "study material for students",
   ],
-  authors: [{ name: "eSIM Myanmar Team", url: "https://esim.com.mm/about" }],
-  creator: "eSIM Myanmar",
-  publisher: "eSIM Myanmar",
+  authors: [{ name: "Merit Ranker Team", url: "https://meritranker.com/about" }],
+  creator: "Merit Ranker",
+  publisher: "Merit Ranker",
   openGraph: {
-    title: "eSIM Myanmar: Instant Digital SIMs for Seamless Connectivity",
+    title: "Meritranker – AI Learning App for Students & Smart Teacher Tools for Exam Preparation",
     description:
-      "Activate your Myanmar eSIM in minutes. Top providers, secure payments with MyanmarPay. Travel smart with eSIM Myanmar.",
-    url: "https://esim.com.mm",
-    siteName: "eSIM Myanmar",
+      "Meritranker empowers students and teachers with AI tools for UPSC, government, and competitive exam preparation. Create and learn from smart study materials for free.",
+    url: "https://meritranker.com/",
+    siteName: "Merit Ranker",
     images: [
       {
         url: "/og-image.png", // PLACEHOLDER - Create public/og-image.png (1200x630px recommended)
         width: 1200,
         height: 630,
-        alt: "eSIM Myanmar - Digital SIM Solutions for Myanmar",
+        alt: "Meritranker - AI-Powered Learning",
       },
     ],
     locale: "en_US", // Consider 'my_MM' if primary content is Burmese
@@ -84,10 +79,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "eSIM Myanmar - Your Gateway to Instant Digital SIMs in Myanmar",
+    title: "Meritranker - AI-Powered Learning",
     description:
-      "Get your eSIM for Myanmar now! Fast activation, top providers, and secure payments. Visit esim.com.mm.",
-    site: "@eSIMMyanmar", // REPLACE with your actual Twitter handle if available
+      "Learn, practice, and succeed. Study from top teachers, attempt mocks, and use AI to plan & revise smarter.",
+    site: "@meritRanker", // REPLACE with your actual Twitter handle if available
     creator: "@CreatorHandle", // REPLACE with the content creator's Twitter handle if different
     images: ["/twitter-image.png"], // PLACEHOLDER - Create public/twitter-image.png (e.g., 1200x675px or 1200x600px)
   },
@@ -114,7 +109,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json", // Place in /public/manifest.json for PWA capabilities
   alternates: {
     // Canonical URL
-    canonical: "https://esim.com.mm",
+    canonical: "https://meritranker.com/",
   },
     generator: 'v0.app'
 }
