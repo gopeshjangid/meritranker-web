@@ -1,8 +1,12 @@
-import type { MetadataRoute } from "next"
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://esim.com.mm"
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://meritranker.com"
+      : "http://localhost:3000";
 
+  // ✅ Static routes for your main pages
   const staticRoutes = [
     "", // Homepage
     "/about",
@@ -13,30 +17,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/privacy-policy",
     "/terms-of-service",
-    "/buy-esim", // Assuming this page will exist for the "Buy eSIM" button
-  ]
+    "/buy-esim", // eSIM purchase page
+  ];
 
+  // ✅ Generate sitemap entries for static routes
   const sitemapEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
     url: `${baseUrl}${route === "" ? "/" : route}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: route === "" ? 1.0 : route === "/buy-esim" ? 0.9 : 0.7,
-  }))
+    priority:
+      route === ""
+        ? 1.0
+        : route === "/about" || route === "/how-it-works"
+        ? 0.9
+        : 0.7,
+  }));
 
-  // Homepage sections (optional, if you want to explicitly list them)
-  const homepageSections = ["/#features", "/#providers", "/#pricing"]
+  // ✅ Optional: homepage anchor sections (for SEO deep links)
+  const homepageSections = ["/#features", "/#providers", "/#pricing"];
   homepageSections.forEach((section) => {
-    // Only add if they are not full pages already listed above
-    if (!staticRoutes.includes(section.replace("/#", "/"))) {
-      // Check against root path for sections
-      sitemapEntries.push({
-        url: `${baseUrl}${section}`,
-        lastModified: new Date(), // Assuming homepage content updates together
-        changeFrequency: "monthly",
-        priority: 0.6,
-      })
-    }
-  })
+    sitemapEntries.push({
+      url: `${baseUrl}${section}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+  });
 
-  return sitemapEntries
+  // ✅ Optional: future dynamic routes (blogs, posts, etc.)
+  // Example:
+  // const blogs = await getAllBlogs(); 
+  // blogs.forEach((blog) => {
+  //   sitemapEntries.push({
+  //     url: `${baseUrl}/blog/${blog.slug}`,
+  //     lastModified: blog.updatedAt,
+  //     changeFrequency: "weekly",
+  //     priority: 0.8,
+  //   });
+  // });
+
+  return sitemapEntries;
 }
