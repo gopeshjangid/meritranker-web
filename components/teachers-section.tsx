@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { AnimatedTechParticles } from "./animated-tech-patterns"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { AnimatedTechParticles } from "./animated-tech-patterns";
 import {
   Megaphone,
   PenTool,
@@ -16,51 +16,51 @@ import {
   Clock,
   Wand2,
   TrendingUp,
-} from "lucide-react"
+} from "lucide-react";
 
 export function TeachersSection() {
   const items = [
     {
       icon: PenTool,
       title: "Create Notes PDFs (AI)",
-      desc: "Smart editor to write, polish, translate, add diagrams, and export PDFs.",
+      desc: "Use Notes AI to write, summarize, translate, and export professional PDFs in seconds.",
     },
     {
       icon: Presentation,
-      title: "Live Class Slides",
-      desc: "Generate presentation slides with explanatory diagrams and images in seconds.",
+      title: "Generate Live Class Slides",
+      desc: "Create beautiful slides with diagrams and visuals automatically - perfect for online teaching or smart classrooms.",
     },
     {
       icon: FileSpreadsheet,
-      title: "Mocks & Quizzes",
-      desc: "Create from patterns, previous years, exam levels, or subject/topic bases.",
+      title: "Mocks & Quizzes Builder",
+      desc: "Build practice sets from past papers, new patterns, or your own syllabus using AI quiz generator tools.",
     },
     {
       icon: UsersRound,
       title: "Sell Premium Content",
-      desc: "Offer mock tests, practice questions, and subscriptions (online/offline).",
+      desc: "Offer exclusive mock tests, question banks, and subscriptions online or offline - and earn money teaching online.",
     },
     {
       icon: Youtube,
       title: "Go Live on YouTube",
-      desc: "Connect your channel to host live sessions and collect doubts in real time.",
+      desc: "Host interactive classes, collect doubts, and expand your teaching audience with YouTube AI integrations.",
     },
     {
       icon: Megaphone,
-      title: "WA/Telegram Auto Replies",
-      desc: "Connect groups/channels to auto-answer and resolve doubts 24/7.",
+      title: "WA & Telegram Auto Replies",
+      desc: "Automate group responses and resolve student queries 24/7 with AI auto-reply tools for teachers..",
     },
     {
       icon: ShieldCheck,
       title: "Protect Your Content",
-      desc: "Watermark/trademark protection for premium materials.",
+      desc: "Use watermark and trademark protection for your premium learning materials.",
     },
     {
       icon: Gauge,
       title: "Manage & Grow",
-      desc: "Manage students, payments, and analytics to scale your reach.",
+      desc: "Track payments, manage students, analyze growth - all powered by AI dashboards for Teacher.",
     },
-  ]
+  ];
 
   const why = [
     {
@@ -83,10 +83,13 @@ export function TeachersSection() {
       title: "Boost Your Brand",
       desc: "Get discovered by students and grow your presence online.",
     },
-  ]
+  ];
 
   return (
-    <section id="teachers" className="py-20 md:py-28 bg-darkBlue relative overflow-hidden">
+    <section
+      id="teachers"
+      className="py-20 md:py-28 bg-darkBlue relative overflow-hidden"
+    >
       <AnimatedTechParticles particleCount={20} className="opacity-25" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -121,8 +124,9 @@ export function TeachersSection() {
               Everything for <span className="gradient-text">Teachers</span>
             </h2>
             <p className="text-slate-300 mb-6">
-              Create notes and slides, build quizzes and mocks, manage students, and sell premium content—powered by
-              Intelligence.
+              Create notes, quizzes, mock tests, and sell premium content with
+              AI tools for teachers. Automate replies, manage students, and earn
+              online with ease.
             </p>
 
             {/* core features */}
@@ -136,7 +140,9 @@ export function TeachersSection() {
                     <it.icon className="h-5 w-5 text-cyan-400 mt-1" />
                     <div>
                       <h3 className="font-semibold text-white">{it.title}</h3>
-                      <p className="text-slate-300 text-sm leading-relaxed">{it.desc}</p>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        {it.desc}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -162,5 +168,5 @@ export function TeachersSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

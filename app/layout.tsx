@@ -148,7 +148,7 @@ export default function RootLayout({
         >
           {/* global-error.tsx will render its own html/body if it catches an error here */}
           {children}
-          <FloatingActionButton />
+          {/* <FloatingActionButton /> */}
           <Toaster /> {/* For displaying toast notifications */}
         </ThemeProvider>
       </body>

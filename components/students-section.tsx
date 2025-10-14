@@ -7,13 +7,13 @@ import { CheckCircle2 } from "lucide-react"
 
 export function StudentsSection() {
   const bullets = [
-    "Learn from your favorite teachers with structured courses",
-    "Manage notes and study from them with instant summaries",
-    "Solve Advanced Maths and Reasoning questions with step-by-step solutions",
-    "Generate unlimited GK/English questions with new patterns and predicted questions",
-    "Stay up to date: exam notifications and current affairs in one feed",
+    "Study from your favorite teachers with structured lessons",
+    "Manage, summarize, and revise notes with Notes AI",
+    "Solve Advanced Maths & Reasoning with AI question-answer tools",
+    "Stay updated with Exam notifications & Daily current affairs in one feed",
     "Track your progress with detailed analytics",
-    "Daily Current Affairs and Job Notifications in one feed",
+    "Ask complex doubts and get AI-smart answers instantly",
+    "Connect YouTube to attend Live Classes and doubt sessions",
     "Ask any complex question and get simple, exam-smart tricks",
     "Connect YouTube to attend Live Classes and doubt sessions",
     "Ask by Voice, scan screenshots, and share solutions with friends",
@@ -35,7 +35,7 @@ export function StudentsSection() {
               Built for <span className="gradient-text">Students</span>
             </h2>
             <p className="text-slate-300 mb-6">
-              Prepare smarter for SSC, UPSC, Banking, Railways, State PSCs, and more. Everything you need in one app.
+              Your one-stop AI study platform for SSC, UPSC, Railway, Banking, and all government exams. Prepare smarter - not harder.
             </p>
             <ul className="space-y-3">
               {bullets.map((b) => (

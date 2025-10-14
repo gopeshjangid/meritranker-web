@@ -6,16 +6,16 @@ import { AnimatedTechParticles } from "./animated-tech-patterns"
 
 export function ShowcaseSection() {
   const cards = [
-    { src: "/images/mocks-and-quizzes.jpg", alt: "Mocks and quizzes", caption: "Mocks & Quizzes" },
-    { src: "/images/notes-and-revision.jpg", alt: "Notes and revision", caption: "Notes & Revision" },
-    { src: "/images/teacher-branding.jpg", alt: "Teacher personal branding", caption: "Teacher Branding" },
+    { src: "/images/notes-and-revision.jpg", alt: "AI Notes & Smart Revisions", caption: "AI Notes & Smart Revisions" },
+    { src: "/images/mocks-and-quizzes.jpg", alt: "Mocks & Quizzes", caption: "Mocks & Quizzes" },
+    { src: "/images/teacher-branding.jpg", alt: "Teacher Branding Tools", caption: "Teacher Branding Tools" },
     {
       src: "/images/whatsapp-telegram.jpg",
-      alt: "WhatsApp and Telegram auto replies",
-      caption: "WA/Telegram Auto Replies",
+      alt: "Telegram & WhatsApp Auto Replies",
+      caption: "Telegram & WhatsApp Auto Replies",
     },
-    { src: "/images/youtube-notes.jpg", alt: "YouTube to notes", caption: "YouTube → Notes" },
-    { src: "/images/ai-assistant.jpg", alt: "Intelligence assistant", caption: "Personal Assistant" },
+    { src: "/images/youtube-notes.jpg", alt: "YouTube to notes automation", caption: "YouTube → Notes Automation" },
+    { src: "/images/ai-assistant.jpg", alt: "AI Personal Study Assistant", caption: "AI Personal Study Assistant" },
   ]
   return (
     <section className="py-20 md:py-28 bg-darkBlue relative overflow-hidden">
@@ -29,10 +29,10 @@ export function ShowcaseSection() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-pretty text-white">
-            What you get in <span className="gradient-text">Meritranker</span>
+            What You Get in <span className="gradient-text">Meritranker</span>
           </h2>
           <p className="text-slate-300 mt-3 max-w-2xl mx-auto">
-            A glimpse of the all-in-one experience for both students and teachers.
+            Experience an all-in-one platform for students and teachers.
           </p>
         </motion.div>
 
