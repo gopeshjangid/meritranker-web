@@ -22,6 +22,17 @@ const nextConfig = {
     //     hostname: '**.example.com', // Example pattern
     //   },
     // ],
+    domains: [ 
+      "lh3.googleusercontent.com",
+      "picsum.photos",
+      "github.com",
+      "images.unsplash.com",
+      "plus.unsplash.com",
+      "graciousquotes.com",
+      "developers.elementor.com",
+      "cdn3.iconfinder.com",
+      "cdn.sanity.io",
+    ]
   },
   // experimental: {
   //   appDir: true, // This is true by default in Next.js 13.4+
