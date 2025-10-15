@@ -173,7 +173,7 @@ export default async function BlogDetailPage({
     : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png";
 
   return (
-    <section className="py-[40px]">
+    <section className="py-[90px]">
       <div className="container grid gap-6 md:gap-[20px] grid-cols-12">
         {/* Sidebar */}
         <aside className="lg:col-span-3 col-span-12 order-2 lg:order-1 mb-8 lg:mb-0">

@@ -44,7 +44,7 @@ export default function BlogsPage() {
   }, [type]); // Refetch posts when `type` changes
 
   return (
-    <section className="py-[40px]">
+    <section className="py-[90px]">
       <div className="container grid gap-[20px] grid-cols-12">
         {/* Sidebar Section */}
         <div className="lg:col-span-3 col-span-12 *:mb-[30px] order-2 lg:order-1">

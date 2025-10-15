@@ -48,7 +48,7 @@ const cardVariants = {
     y: 0,
     scale: 1,
     transition: {
-      type: "spring",
+      type: "spring" as any,
       stiffness: 70,
       damping: 12,
       duration: 0.4,
@@ -104,7 +104,8 @@ export function ProvidersSection() {
                     <ChevronRight className="relative z-10 ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     <motion.div
                       className="absolute inset-0 bg-cyan-400/10"
-                      initial={{ scaleX: 0, originLeft: 0 }}
+                      style={{ transformOrigin: "left center" }}
+                      initial={{ scaleX: 0 }}
                       whileHover={{ scaleX: 1 }}
                       transition={{ duration: 0.3, ease: "easeOut" }}
                     />

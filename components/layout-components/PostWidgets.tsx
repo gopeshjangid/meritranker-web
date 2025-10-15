@@ -19,8 +19,8 @@ const PostWidgetsSkeletonLoader = () => {
         <li key={item} className="flex gap-3 mb-2">
           <div className="w-[20%] aspect-[1/0.6] rounded-sm bg-bg-slate-800/40 dark:bg-slate-800/40"></div>
           <div className="w-[60%] space-y-2">
-            <div className="h-4 bg-slate-300 dark:bg-slate-300 rounded"></div>
-            <div className="h-3 bg-slate-300 dark:bg-slate-300 rounded w-5/6"></div>
+            <div className="h-4 bg-slate-800/40 dark:bg-slate-800/40 rounded"></div>
+            <div className="h-3 bg-slate-800/40 dark:bg-slate-800/40 rounded w-5/6"></div>
           </div>
         </li>
       ))}

@@ -1,15 +1,17 @@
-import type React from "react"
-import type { Metadata, Viewport } from "next" // Added Viewport
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { FloatingActionButton } from "@/components/floating-action-button"
-import { Toaster } from "@/components/ui/toaster" // For potential toast notifications
+import type React from "react";
+import type { Metadata, Viewport } from "next"; // Added Viewport
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+// import { FloatingActionButton } from "@/components/floating-action-button";
+import { Toaster } from "@/components/ui/toaster"; // For potential toast notifications
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap", // Improves font loading performance
-})
+});
 
 // Organization Schema for SEO
 const organizationSchema = {
@@ -39,13 +41,14 @@ const organizationSchema = {
     // "https://www.facebook.com/eSIMMyanmar", // Example: Add other social media links
     // "https://www.linkedin.com/company/esimmyanmar", // Example
   ],
-}
+};
 
 // Metadata for SEO and Social Sharing
 export const metadata: Metadata = {
   metadataBase: new URL("https://meritranker.com/"), // Crucial for resolving relative image paths
   title: {
-    default: "Meritranker | AI Learning App & Teacher Tools for Govt & Competitive Exam Preparation",
+    default:
+      "Meritranker | AI Learning App & Teacher Tools for Govt & Competitive Exam Preparation",
     template: "Meritranker - AI-Powered Learning",
   },
   description:
@@ -57,11 +60,14 @@ export const metadata: Metadata = {
     "free ai for upsc preparation",
     "study material for students",
   ],
-  authors: [{ name: "Merit Ranker Team", url: "https://meritranker.com/about" }],
+  authors: [
+    { name: "Merit Ranker Team", url: "https://meritranker.com/about" },
+  ],
   creator: "Merit Ranker",
   publisher: "Merit Ranker",
   openGraph: {
-    title: "Meritranker – AI Learning App for Students & Smart Teacher Tools for Exam Preparation",
+    title:
+      "Meritranker – AI Learning App for Students & Smart Teacher Tools for Exam Preparation",
     description:
       "Meritranker empowers students and teachers with AI tools for UPSC, government, and competitive exam preparation. Create and learn from smart study materials for free.",
     url: "https://meritranker.com/",
@@ -111,8 +117,8 @@ export const metadata: Metadata = {
     // Canonical URL
     canonical: "https://meritranker.com/",
   },
-    generator: 'v0.app'
-}
+  generator: "v0.app",
+};
 
 // Viewport configuration for responsiveness and theme color
 export const viewport: Viewport = {
@@ -123,18 +129,23 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1, // Optional: prevent zooming if desired for app-like feel
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* JSON-LD Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
         {/* Any other critical head elements */}
       </head>
       <body
@@ -146,12 +157,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {/* global-error.tsx will render its own html/body if it catches an error here */}
           {children}
           {/* <FloatingActionButton /> */}
           <Toaster /> {/* For displaying toast notifications */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
