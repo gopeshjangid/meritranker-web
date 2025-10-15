@@ -12,7 +12,7 @@ export default function TeacherProfilePage({ params }: { params: { slug: string 
   if (!teacher) return notFound()
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-4 py-10">
+    <main className="mx-auto w-full max-w-5xl px-4 pt-[90px] pb-10">
       <header className="flex flex-col md:flex-row md:items-center gap-4">
         <img
           src={teacher.avatar || "/placeholder.svg?height=128&width=128&query=teacher%20avatar"}

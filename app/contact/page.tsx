@@ -1,6 +1,6 @@
 import { ContactForm } from "@/components/contact-form" // Assuming ContactForm is now a named export
-import { Footer } from "@/components/footer"
-import { Navbar } from "@/components/navbar"
+// import { Footer } from "@/components/footer"
+// import { Navbar } from "@/components/navbar"
 import type { Metadata } from "next"
 import { Mail, Phone, GlobeIcon, MessageSquare } from "lucide-react" // Renamed Globe to avoid conflict
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="flex-grow pt-20 pb-12 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <header className="text-center mb-12 md:mb-16">
@@ -126,7 +126,7 @@ export default function ContactPage() {
             </div>
           </div>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )
