@@ -1,35 +1,35 @@
 import { ContactForm } from "@/components/contact-form" // Assuming ContactForm is now a named export
-import { Footer } from "@/components/footer"
-import { Navbar } from "@/components/navbar"
+// import { Footer } from "@/components/footer"
+// import { Navbar } from "@/components/navbar"
 import type { Metadata } from "next"
 import { Mail, Phone, GlobeIcon, MessageSquare } from "lucide-react" // Renamed Globe to avoid conflict
 
 export const metadata: Metadata = {
-  title: "Contact Us - eSIM Myanmar",
+  title: "Contact Meritranker | Connect for AI Smart Study & Help",
   description:
-    "Get in touch with eSIM Myanmar for support, inquiries, or partnership opportunities. Call us at 09650000172 or email info@esim.com.mm.",
+    "Get in touch with Meritranker for support, feedback, or collaboration. We help teachers and students with smart AI tools for better learning.",
   openGraph: {
-    title: "Contact Us - eSIM Myanmar",
-    description: "Reach out to eSIM Myanmar for all your eSIM needs and questions.",
-    url: "https://esim.com.mm/contact",
-    siteName: "eSIM Myanmar",
+    title: "Contact Meritranker | Connect for AI Smart Study & Help",
+    description: "Get in touch with Meritranker for support, feedback, or collaboration. We help teachers and students with smart AI tools for better learning.",
+    url: "https://meritranker.com/contact",
+    siteName: "Merit Ranker",
     type: "website",
   },
   alternates: {
-    canonical: "https://esim.com.mm/contact",
+    canonical: "https://meritranker.com/contact",
   },
 }
 
 const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Contact Us - eSIM Myanmar",
+  name: "Contact Meritranker | Connect for AI Smart Study & Help",
   description:
-    "Contact eSIM Myanmar for any inquiries or support regarding our eSIM services. Reach out to us via our contact form, email, or phone.",
-  url: "https://esim.com.mm/contact",
+    "Get in touch with Meritranker for support, feedback, or collaboration. We help teachers and students with smart AI tools for better learning.",
+  url: "https://meritranker.com/contact",
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://esim.com.mm/contact",
+    "@id": "https://meritranker.com/contact",
   },
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -38,13 +38,13 @@ const contactPageSchema = {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://esim.com.mm/",
+        item: "https://meritranker.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Contact Us",
-        item: "https://esim.com.mm/contact",
+        item: "https://meritranker.com/contact",
       },
     ],
   },
@@ -56,25 +56,25 @@ export default function ContactPage() {
       icon: Phone,
       label: "Phone",
       value: "09 6500 00172",
-      href: "tel:+959650000172",
+      href: "tel:+91 98765 43210",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@esim.com.mm",
-      href: "mailto:info@esim.com.mm",
+      value: "info@meritranker.com",
+      href: "mailto:info@meritranker.com",
     },
     {
       icon: GlobeIcon,
       label: "Website",
       value: "esim.com.mm",
-      href: "https://esim.com.mm",
+      href: "https://meritranker.com/",
     },
     {
       icon: MessageSquare, // Using MessageSquare for generic social media
       label: "Social",
-      value: "@eSIMMyanmar",
-      href: "https://x.com/eSIMMyanmar", // Replace with actual social media link if available
+      value: "@meritRanker",
+      href: "https://x.com/meritRanker", // Replace with actual social media link if available
     },
   ]
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="flex-grow pt-20 pb-12 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <header className="text-center mb-12 md:mb-16">
@@ -126,7 +126,7 @@ export default function ContactPage() {
             </div>
           </div>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

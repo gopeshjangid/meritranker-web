@@ -4,9 +4,9 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - eSIM Myanmar",
+  title: "Terms of Service | Meritranker AI Study Platform",
   description:
-    "Read the Terms of Service for using eSIM Myanmar services. By using our service, you agree to these terms.",
+    "Read the terms for using Meritranker’s AI-based study tools, teacher features, student features and preparation for government and competitive exams.",
 }
 
 export default function TermsOfServicePage() {

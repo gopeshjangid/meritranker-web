@@ -4,8 +4,8 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - eSIM Myanmar",
-  description: "Read the Privacy Policy for eSIM Myanmar services. Your data privacy is important to us.",
+  title: "Privacy Policy | Meritranker AI Learning Platform",
+  description: "Learn how Meritranker protects your data while offering AI-powered learning tools, teacher resources, and exam preparation support for students.",
 }
 
 export default function PrivacyPolicyPage() {

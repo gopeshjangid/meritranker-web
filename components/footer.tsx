@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react"
-import { usePathname } from "next/navigation" // Import usePathname
-import { cn } from "@/lib/utils" // Import cn
+import Link from "next/link";
+import { Facebook, Twitter, Instagram, Mail, Phone } from "lucide-react";
+import { usePathname } from "next/navigation"; // Import usePathname
+import { cn } from "@/lib/utils"; // Import cn
 
 export function Footer() {
-  const phoneNumber = "+91 00000 00000"
-  const telLink = "tel:+910000000000"
-  const emailAddress = "hello@meritranker.com"
-  const mailtoLink = "mailto:hello@meritranker.com"
-  const pathname = usePathname() // Get current path
+  const phoneNumber = "+91 00000 00000";
+  const telLink = "tel:+910000000000";
+  const emailAddress = "hello@meritranker.com";
+  const mailtoLink = "mailto:hello@meritranker.com";
+  const pathname = usePathname(); // Get current path
 
   const quickLinks = [
     { href: "/#features", label: "Features" },
     { href: "/#students", label: "For Students" },
     { href: "/#teachers", label: "For Teachers" },
     { href: "/faq", label: "FAQ" },
-  ]
+  ];
 
   const supportLinks = [
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact Us" },
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/terms-of-service", label: "Terms of Service" },
-  ]
+  ];
 
   return (
     <footer className="bg-card/50 border-t border-border/50">
@@ -33,8 +33,10 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold gradient-text">Meritranker</h3>
             <p className="text-sm text-foreground/70">
-              AI-powered learning platform for Indian government exam preparation. Learn from the best, practice daily,
-              and rank higher.
+              Meritranker - India’s smartest AI education app for students and
+              teachers. Prepare for government exams like SSC, UPSC, Banking,
+              and Railway using free AI tools, study materials, and smart study
+              techniques.
             </p>
             <div className="flex space-x-4">
               <Link
@@ -86,7 +88,7 @@ export function Footer() {
                     href={link.href}
                     className={cn(
                       "text-foreground/70 hover:text-primary transition-colors animated-underline",
-                      pathname === link.href && "text-primary font-semibold",
+                      pathname === link.href && "text-primary font-semibold"
                     )}
                   >
                     {link.label}
@@ -122,9 +124,12 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border/50 mt-8 pt-8 text-center text-sm text-foreground/50">
-          <p>&copy; {new Date().getFullYear()} Meritranker. All rights reserved. Built on Vercel.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Meritranker. All rights reserved.
+            Built on Vercel.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

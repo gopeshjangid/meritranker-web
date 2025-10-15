@@ -43,7 +43,7 @@ const stepItemVariants = (index: number) => ({
     opacity: 1,
     x: 0,
     transition: {
-      type: "spring",
+      type: "spring" as any,
       stiffness: 50,
       damping: 10,
       delay: index * 0.2,

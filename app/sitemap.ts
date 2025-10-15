@@ -17,7 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/privacy-policy",
     "/terms-of-service",
-    "/buy-esim", // eSIM purchase page
   ];
 
   // ✅ Generate sitemap entries for static routes

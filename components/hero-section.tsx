@@ -29,15 +29,15 @@ export function HeroSection() {
 
   const headlineText =
     mode === "student"
-      ? "Learn. Practice. Rank. with Intelligence on Meritranker"
+      ? "Learn. Practice. Rank. with Intelligence on Meritranker."
       : "Create for Free. Share your knowledge with Meritranker."
   const headlineWords = headlineText.split(" ")
-  const gradientWords = ["Learn.", "Practice.", "Rank.", "Meritranker", "Create for Free."] // Words to apply gradient to
+  const gradientWords = ["Learn.", "Practice.", "Rank.", "Meritranker.", "Create for Free."] // Words to apply gradient to
 
   const subHeadlineText =
     mode === "student"
-      ? "All-in-one platform for Indian government exam prep. Learn from your favorite teachers, practice topic-wise, manage notes, and let Intelligence plan your day."
-      : "Create, polish, and sell notes; build mocks and quizzes instantly; manage students with Intelligence-backed automations—grow your personal brand and reach."
+      ? "An all-in-one AI for government exam preparation. Learn from expert teachers, access free, practice topic-wise, manage study notes, and let Intelligence guide your day with smart study tips."
+      : "Build and sell notes, quizzes, lesson plan, and mock tests instantly. Manage students with Intelligence-backed automations, and grow your teaching brand with AI tools for teachers - all in one place."
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,7 +56,7 @@ export function HeroSection() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as any,
         stiffness: 100,
         damping: 12,
       },
@@ -70,7 +70,7 @@ export function HeroSection() {
       y: 0,
       transition: {
         delay: i * 0.08, // Slightly adjusted delay for better flow
-        type: "spring",
+        type: "spring" as any,
         stiffness: 100,
         damping: 10,
       },
