@@ -57,12 +57,12 @@ const components: Partial<PortableTextReactComponents> = {
   block: {
     // Customize block styles like headings, paragraphs, etc.
     h1: ({ children }) => (
-      <h1 className="text-3xl font-bold my-6 dark:text-cyan-300 text-cyan-300">
+      <h1 className="text-3xl font-bold my-6 dark:text-primary text-primary">
         {children}
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-2xl font-bold my-4 dark:text-cyan-300 text-cyan-300">
+      <h2 className="text-2xl font-bold my-4 dark:text-primary text-primary">
         {children}
       </h2>
     ),
@@ -83,7 +83,7 @@ const components: Partial<PortableTextReactComponents> = {
         <a
           href={value.href}
           rel={rel}
-          className="underline text-cyan-200 hover:text-cyan-400 transition-colors"
+          className="underline text-primary hover:text-primary transition-colors"
         >
           {children}
         </a>
@@ -182,7 +182,7 @@ export default async function BlogDetailPage({
 
         {/* Main Content */}
         <div className="lg:col-span-9 col-span-12 order-1 lg:order-2">
-          <div className="bg-slate-800/40 dark:bg-slate-800/40 p-6 rounded-[10px] shadow-[0_2px_15px_rgba(6,182,212,0.2)] dark:shadow-[0_2px_15px_rgba(6,182,212,0.2)] dark:text-white">
+          <div className="bg-card dark:bg-card p-6 rounded-[10px] shadow-[0_2px_15px_rgba(0,0,0,0.25)] dark:shadow-[0_2px_15px_rgba(0,0,0,0.25)] dark:text-white">
             <BackButton />
 
             <article className="prose max-w-none mt-4">
@@ -201,7 +201,7 @@ export default async function BlogDetailPage({
               )}
 
               {/* Title */}
-              <h1 className="text-3xl font-bold mb-2 dark:text-cyan-400 text-cyan-400">
+              <h1 className="text-3xl font-bold mb-2 dark:text-primary text-primary">
                 {post.title}
               </h1>
 
@@ -216,7 +216,7 @@ export default async function BlogDetailPage({
                     {/* <PostTypeChip text={post.category[0].title} /> */}
                     <span
                       title={post.category[0].title}
-                      className="sm:ml-2 px-3 py-[2px] rounded-full border border-cyan-400 text-cyan-400 text-xs font-medium truncate max-w-[50%] text-right"
+                      className="sm:ml-2 px-3 py-[2px] rounded-full border border-primary text-primary text-xs font-medium truncate max-w-[50%] text-right"
                     >
                       {post.category[0].title}
                     </span>
@@ -231,7 +231,7 @@ export default async function BlogDetailPage({
                   {post.tags.map((tag: string, index: number) => (
                     <span
                       key={index}
-                      className="text-cyan-400 text-sm md:text-base"
+                      className="text-primary text-sm md:text-base"
                     >
                       {tag}
                     </span>

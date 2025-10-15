@@ -32,8 +32,8 @@ const PostWidgets = (props: PostWidgetsProps) => {
   const { data, widgetsTitle, loading, error } = props;
 
   return (
-    <div className="bg-slate-800/40 rounded-[10px] p-4 shadow-[0_2px_15px_rgba(6,182,212,0.2)] mb-8">
-      <h3 className="text-lg mb-4 font-medium text-cyan-400">
+    <div className="bg-card rounded-[10px] p-4 shadow-[0_2px_15px_rgba(0,0,0,0.25)] mb-8">
+      <h3 className="text-lg mb-4 font-medium text-primary">
         {widgetsTitle}
       </h3>
 
@@ -64,7 +64,7 @@ const PostWidgets = (props: PostWidgetsProps) => {
                     />
                   </div>
                   <div className="w-[60%]">
-                    <p className="dark:text-slate-300 text-slate-300 hover:text-cyan-400 dark:hover:text-cyan-400 text-base line-clamp-2">
+                    <p className="dark:text-foreground/80 text-foreground/80 hover:text-primary dark:hover:text-primary text-base line-clamp-2">
                       {item?.title}
                     </p>
                   </div>

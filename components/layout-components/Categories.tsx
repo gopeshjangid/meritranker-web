@@ -47,8 +47,8 @@ const Categories = () => {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
   return (
-    <div className="bg-slate-800/40  rounded-[10px] p-4 shadow-[0_2px_15px_rgba(6,182,212,0.2)]">
-      <h3 className="text-lg mb-4 font-medium text-cyan-400">Categories</h3>
+    <div className="bg-card  rounded-[10px] p-4 shadow-[0_2px_15px_rgba(0,0,0,0.25)]">
+      <h3 className="text-lg mb-4 font-medium text-primary">Categories</h3>
 
       {loading ? (
         <CategoriesSkeletonLoader />
@@ -60,9 +60,9 @@ const Categories = () => {
             <Link
               href={"/blogs"}
               className={cn(
-                "dark:text-slate-300 text-slate-300 hover:text-cyan-400 dark:hover:text-cyan-400",
+                "dark:foreground/80 foreground/80 hover:text-primary dark:hover:text-primary",
                 {
-                  "text-cyan-400 dark:text-cyan-400": type === null,
+                  "text-primary dark:text-primary": type === null,
                 }
               )}
             >
@@ -74,9 +74,9 @@ const Categories = () => {
               <Link
                 href={`/blogs?type=${item.slug.current}`}
                 className={cn(
-                  "dark:text-slate-300 text-slate-300 hover:text-cyan-400 dark:hover:text-cyan-400",
+                  "dark:foreground/80 foreground/80 hover:text-primary dark:hover:text-primary",
                   {
-                    "text-cyan-400 dark:text-cyan-400":
+                    "text-primary dark:text-primary":
                       type === item.slug.current,
                   }
                 )}

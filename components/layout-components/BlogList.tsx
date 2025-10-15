@@ -105,7 +105,7 @@ export default function BlogList({
           )}
 
           {allLoaded && !loading && (
-            <p className="text-slate-300 dark:text-slate-300 mt-4">
+            <p className="text-foreground/80 dark:text-foreground/80 mt-4">
               No more blogs to load
             </p>
           )}

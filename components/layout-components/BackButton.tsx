@@ -17,7 +17,7 @@ const BackButton: React.FC<BackButtonProps> = ({
   return (
     <button
       onClick={() => router.back()}
-      className={`flex items-center text-cyan-400 dark:text-cyan-400 hover:text-cyan-300 dark:hover:text-cyan-300 ${className}`}
+      className={`flex items-center text-primary dark:text-primary hover:text-cyan-300 dark:hover:text-cyan-300 ${className}`}
     >
       <ArrowLeft className="w-5 h-5 mr-2" />
       <span>{label}</span>
