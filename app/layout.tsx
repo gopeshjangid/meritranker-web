@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from "next" // Added Viewport
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { FloatingActionButton } from "@/components/floating-action-button"
 import { Toaster } from "@/components/ui/toaster" // For potential toast notifications
+import { GoogleAnalyticsWrapper } from "@/components/google-analytics-wrapper"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -111,7 +111,7 @@ export const metadata: Metadata = {
     // Canonical URL
     canonical: "https://meritranker.com/",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 // Viewport configuration for responsiveness and theme color
@@ -140,6 +140,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-background text-foreground antialiased selection:bg-cyan-500 selection:text-white`}
       >
+        <GoogleAnalyticsWrapper gaMeasurementId="G-J4S31YE836" />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark" // Setting dark as default as per site aesthetic
@@ -148,7 +149,6 @@ export default function RootLayout({
         >
           {/* global-error.tsx will render its own html/body if it catches an error here */}
           {children}
-          <FloatingActionButton />
           <Toaster /> {/* For displaying toast notifications */}
         </ThemeProvider>
       </body>

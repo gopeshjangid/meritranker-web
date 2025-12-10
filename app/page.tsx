@@ -1,61 +1,52 @@
 import type { Metadata } from "next"
-import { Navbar } from "@/components/navbar"
-import { HeroSection } from "@/components/hero-section"
-import { CtaSection } from "@/components/cta-section" // Added CTA Section
-import { Footer } from "@/components/footer"
-import { AICapabilitiesSection } from "@/components/ai-capabilities-section"
-import { StudentsSection } from "@/components/students-section"
-import { TeachersSection } from "@/components/teachers-section"
-import { ShowcaseSection } from "@/components/showcase-section"
-import AppProviders from "@/components/app-providers"
-import { WhyTeachersChooseSection } from "@/components/why-teachers-choose"
+import { EarlyAccessNavbar } from "@/components/early-access-navbar"
+import { EarlyAccessHero } from "@/components/early-access-hero"
+import { EarlyAccessFeatures } from "@/components/early-access-features"
+import { HowItWorksSection } from "@/components/how-it-works-early-access"
+import { EarlyAccessSignup } from "@/components/early-access-signup"
+import { EarlyAccessFooter } from "@/components/early-access-footer"
 
 export const metadata: Metadata = {
-  title: "Meritranker | AI Learning App & Teacher Tools for Govt & Competitive Exam Preparation",
+  title: "MeritRanker - India's First AI-Powered Platform for Govt Job Exam Educators | Early Access",
   description:
-    "Meritranker is an AI learning app for students and teachers. Create smart study materials, prepare for UPSC, government, and competitive exams with free AI tools.",
+    "Crack Government & Competitive Exams with AI-Powered Mock Tests & Smart Study Roadmap. UPSC, SSC, Banking, Railway, State-PSC preparation made smarter. Join the waitlist for early access!",
   alternates: {
     canonical: "https://meritranker.com/",
   },
   openGraph: {
-    title: "Meritranker – AI Learning App for Students & Smart Teacher Tools for Exam Preparation",
+    title: "MeritRanker - AI-Powered Exam Preparation Platform | Early Access",
     description:
-      "Meritranker empowers students and teachers with AI tools for UPSC, government, and competitive exam preparation. Create and learn from smart study materials for free.",
+      "India's First AI-Powered Platform for Govt Job Exam Educators. Mock tests, skill-gap analysis, revision notes & plan: all in one platform.",
     url: "https://meritranker.com/",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Meritranker - AI-Powered Learning",
+        alt: "MeritRanker - AI-Powered Exam Preparation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meritranker - AI-Powered Learning",
+    title: "MeritRanker - AI-Powered Exam Preparation | Early Access",
     description:
-      "Learn, practice, and succeed. Study from top teachers, attempt mocks, and use AI to plan & revise smarter.",
+      "Crack Government & Competitive Exams with AI. Join the waitlist for early access!",
     images: ["/twitter-image.png"],
   },
 }
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col bg-darkBlue selection:bg-cyan-500 selection:text-white">
-      <Navbar />
+    <div className="min-h-screen flex flex-col bg-slate-950 selection:bg-cyan-500 selection:text-white">
+      <EarlyAccessNavbar />
       <main className="flex-grow">
-        <AppProviders>
-          <HeroSection />
-          <AICapabilitiesSection />
-          <StudentsSection />
-          <TeachersSection />
-          <WhyTeachersChooseSection />
-          <ShowcaseSection />
-          <CtaSection />
-        </AppProviders>
+        <EarlyAccessHero />
+        <EarlyAccessFeatures />
+        <HowItWorksSection />
+        <EarlyAccessSignup />
       </main>
-      <Footer />
+      <EarlyAccessFooter />
     </div>
   )
 }
