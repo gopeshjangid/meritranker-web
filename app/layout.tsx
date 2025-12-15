@@ -133,6 +133,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* JSON-LD Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         {/* Any other critical head elements */}
