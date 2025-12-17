@@ -126,6 +126,7 @@ export function EarlyAccessHero() {
         event("signup_start", { method: "hero_form", role })
 
         try {
+            // Use same endpoint as early-access-signup component
             const formspreeEndpoint = "https://formspree.io/f/xblnzpyw"
 
             const response = await fetch(formspreeEndpoint, {
@@ -165,13 +166,6 @@ export function EarlyAccessHero() {
             })
         } finally {
             setIsLoading(false)
-        }
-    }
-
-    const scrollToSignup = () => {
-        const signupSection = document.getElementById("early-access-signup")
-        if (signupSection) {
-            signupSection.scrollIntoView({ behavior: "smooth", block: "center" })
         }
     }
 
@@ -242,6 +236,7 @@ export function EarlyAccessHero() {
                             </motion.p>
 
                             {/* Launch Date Badge */}
+                            {/* TODO: Consider moving launch date to environment variable or config file */}
                             <motion.div
                                 variants={itemVariants}
                                 className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 rounded-full px-6 py-3"
