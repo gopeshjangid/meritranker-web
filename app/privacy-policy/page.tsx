@@ -4,8 +4,9 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - eSIM Myanmar",
-  description: "Read the Privacy Policy for eSIM Myanmar services. Your data privacy is important to us.",
+  title: "Privacy Policy - MeritRanker",
+  description:
+    "Privacy Policy for MeritRanker, an AI platform for Indian government job exam educators and students. Learn how we collect, use, and protect your data under India's DPDP Act.",
 }
 
 export default function PrivacyPolicyPage() {
@@ -15,102 +16,112 @@ export default function PrivacyPolicyPage() {
       <main className="pt-20 md:pt-24 bg-background text-foreground">
         <div className="container mx-auto py-12 px-4 min-h-[calc(100vh-10rem-4rem)]">
           <article className="prose dark:prose-invert max-w-3xl mx-auto">
-            {" "}
-            {/* Using article and prose classes */}
-            <h1 className="gradient-text !mb-2">Privacy Policy</h1> {/* Custom gradient for main title */}
+            <h1 className="gradient-text !mb-2">Privacy Policy</h1>
             <p className="text-sm text-muted-foreground">Last updated: {new Date().toLocaleDateString()}</p>
             <p>
-              eSIM Myanmar ("us", "we", or "our") operates the https://esim.com.mm website (the "Service"). This page
-              informs you of our policies regarding the collection, use, and disclosure of personal data when you use
-              our Service and the choices you have associated with that data. We are committed to protecting your
-              privacy in compliance with applicable laws and GSMA guidelines.
+              MeritRanker is an AI-powered platform that helps educators create study materials, notes, slides, quizzes,
+              and practice tests for Indian government job examinations, and enables students to study smarter and
+              practice faster. We respect your privacy and process personal data in line with the Digital Personal Data
+              Protection Act, 2023 (DPDP Act), the Information Technology Act, 2000, and the SPDI Rules, 2011.
             </p>
-            <h2>Information Collection and Use</h2>
+            <h2>Scope</h2>
             <p>
-              We collect several different types of information for various purposes to provide and improve our Service
-              to you. All data collection is done with transparency and for legitimate operational needs.
+              This policy covers how we collect, use, share, store, and protect personal data when you access or use
+              MeritRanker through our website or services, including educator tools and student practice features.
             </p>
-            <h3>Types of Data Collected</h3>
-            <h4>Personal Data</h4>
-            <p>
-              While using our Service, we may ask you to provide us with certain personally identifiable information
-              that can be used to contact or identify you ("Personal Data"). Personally identifiable information may
-              include, but is not limited to:
-            </p>
+            <h2>Data We Collect</h2>
+            <h3>Account and Profile</h3>
             <ul>
-              <li>Email address (for account creation, communication, and eSIM delivery)</li>
-              <li>First name and last name (for personalization and account identification)</li>
-              <li>Phone number (for customer support and optional two-factor authentication)</li>
-              <li>
-                Device information (e.g., EID, IMEI, device model for eSIM compatibility check and provisioning, only
-                when explicitly provided by you for these purposes)
-              </li>
-              <li>
-                Payment information (processed securely by our payment partners, we do not store full card details)
-              </li>
-              <li>Address, State, Province, ZIP/Postal code, City (for billing and regional service offerings)</li>
-              <li>Cookies and Usage Data (for service improvement and analytics)</li>
+              <li>Name, email address, and phone number</li>
+              <li>Educator profile details such as subjects, bio, branding information, social handles</li>
+              <li>Student preferences, exam targets, and optional demographic details</li>
             </ul>
-            <h4>Usage Data</h4>
-            <p>
-              We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data
-              may include information such as your computer's Internet Protocol address (e.g. IP address), browser type,
-              browser version, the pages of our Service that you visit, the time and date of your visit, the time spent
-              on those pages, unique device identifiers and other diagnostic data.
-            </p>
-            <h3>Use of Data</h3>
-            <p>eSIM Myanmar uses the collected data for various purposes:</p>
+            <h3>Content and Activity</h3>
             <ul>
-              <li>To provide and maintain our Service, including eSIM provisioning and activation.</li>
-              <li>To notify you about changes to our Service or your eSIM profiles.</li>
-              <li>To allow you to participate in interactive features of our Service when you choose to do so.</li>
-              <li>To provide customer support and resolve issues.</li>
-              <li>
-                To gather analysis or valuable information so that we can improve our Service and user experience.
-              </li>
-              <li>To monitor the usage of our Service and detect/prevent fraud or security incidents.</li>
-              <li>To detect, prevent and address technical issues.</li>
-              <li>To comply with legal obligations and GSMA system requirements.</li>
+              <li>Notes, slides, quizzes, mock tests, and other materials you create or upload</li>
+              <li>Practice attempts, scores, solutions viewed, feedback, and progress</li>
+              <li>Support communications and feedback provided to us</li>
             </ul>
-            <h3>Data Retention</h3>
-            <p>
-              We will retain your Personal Data only for as long as is necessary for the purposes set out in this
-              Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal
-              obligations (for example, if we are required to retain your data to comply with applicable laws), resolve
-              disputes, and enforce our legal agreements and policies.
-            </p>
-            <h3>Data Security</h3>
-            <p>
-              The security of your data is important to us. We strive to use commercially acceptable means to protect
-              your Personal Data, including encryption, access controls, and secure infrastructure hosted on Vercel.
-              However, remember that no method of transmission over the Internet, or method of electronic storage is
-              100% secure.
-            </p>
-            {/* ... Add all other necessary sections for a complete privacy policy ... */}
-            <h2>Your Data Protection Rights</h2>
-            <p>
-              You have certain data protection rights. eSIM Myanmar aims to take reasonable steps to allow you to
-              correct, amend, delete, or limit the use of your Personal Data. These include:
-            </p>
+            <h3>Technical and Usage</h3>
             <ul>
-              <li>The right to access, update or delete the information we have on you.</li>
-              <li>The right of rectification.</li>
-              <li>The right to object.</li>
-              <li>The right of restriction.</li>
-              <li>The right to data portability.</li>
-              <li>The right to withdraw consent.</li>
+              <li>Device, browser, and log information including IP address and timestamps</li>
+              <li>Cookie identifiers and analytics about feature usage</li>
+              <li>Payment metadata processed by trusted payment partners; we do not store full card details</li>
             </ul>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <h2>How We Use Data</h2>
+            <ul>
+              <li>Provide, personalize, and improve educator tools and student practice features</li>
+              <li>Generate AI-based content and recommendations</li>
+              <li>Enable account management, authentication, and security</li>
+              <li>Communicate service updates, alerts, and marketing (with opt-out)</li>
+              <li>Debug, prevent fraud, and ensure platform integrity</li>
+              <li>Comply with applicable laws and respond to lawful requests</li>
+            </ul>
+            <h2>Lawful Basis and Consent</h2>
+            <p>
+              We process personal data primarily on the basis of your consent and to perform the services you request.
+              You may withdraw consent at any time, which may affect your ability to use certain features.
+            </p>
+            <h2>Children</h2>
+            <p>
+              MeritRanker is not directed to children under 18. If a user is under 18, use requires verifiable parental
+              consent. We do not engage in tracking or targeted advertising directed at children, and we limit
+              processing to what is necessary to provide core study features.
+            </p>
+            <h2>Sharing and Disclosure</h2>
+            <ul>
+              <li>Service providers for hosting, analytics, email, authentication, and payments</li>
+              <li>Anti-fraud and security partners to protect accounts and content</li>
+              <li>Law enforcement or regulators when required by law</li>
+            </ul>
+            <p>We do not sell personal data.</p>
+            <h2>International Transfers</h2>
+            <p>
+              Data may be processed in India or other jurisdictions by our service providers. Where applicable, we
+              require contractual safeguards and comply with the DPDP Act including any government notifications on
+              restricted transfers.
+            </p>
+            <h2>Retention</h2>
+            <p>
+              We retain personal data for as long as needed to provide the services, meet legal obligations, and resolve
+              disputes. Educators may delete their content, and users can request deletion of their accounts subject to
+              lawful retention requirements.
+            </p>
+            <h2>Security</h2>
+            <p>
+              We use reasonable technical and organizational measures including encryption in transit, access controls,
+              and secure infrastructure. No system is perfectly secure; report suspected incidents to the contacts
+              below.
+            </p>
+            <h2>Your Rights</h2>
+            <p>
+              Subject to the DPDP Act, you may request access, correction, updating, or deletion of your personal data,
+              withdraw consent, and raise grievances. You may also nominate another person to exercise rights in case of
+              incapacity.
+            </p>
+            <h2>Cookies and Analytics</h2>
+            <p>
+              We use essential cookies for core functionality and analytics cookies to understand usage. You can manage
+              preferences via browser settings. Some features may not function without essential cookies.
+            </p>
+            <h2>Grievance Officer</h2>
+            <p>
+              Grievance Officer: MeritRanker Support. Contact:{" "}
+              <a href="mailto:privacy@meritranker.com">privacy@meritranker.com</a>. We aim to acknowledge and resolve
+              grievances within 30 days.
+            </p>
+            <h2>Changes to This Policy</h2>
+            <p>
+              We may update this policy to reflect changes to our practices or legal requirements. Continued use of the
+              services after changes signifies acceptance.
+            </p>
+            <h2>Contact</h2>
             <ul>
               <li>
-                By email: <a href="mailto:info@esim.com.mm">info@esim.com.mm</a>
+                Email: <a href="mailto:hello@meritranker.com">hello@meritranker.com</a>
               </li>
               <li>
-                By phone number: <a href="tel:+959650000172">09 6500 00172</a>
-              </li>
-              <li>
-                Through our website: <Link href="/contact">Contact Page</Link>
+                Contact page: <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </article>

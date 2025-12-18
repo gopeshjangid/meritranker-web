@@ -4,9 +4,9 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - eSIM Myanmar",
+  title: "Terms of Service - MeritRanker",
   description:
-    "Read the Terms of Service for using eSIM Myanmar services. By using our service, you agree to these terms.",
+    "Terms of Service for MeritRanker, an AI platform for Indian government job exam educators and students.",
 }
 
 export default function TermsOfServicePage() {
@@ -16,89 +16,97 @@ export default function TermsOfServicePage() {
       <main className="pt-20 md:pt-24 bg-background text-foreground">
         <div className="container mx-auto py-12 px-4 min-h-[calc(100vh-10rem-4rem)]">
           <article className="prose dark:prose-invert max-w-3xl mx-auto">
-            {" "}
-            {/* Using article and prose classes */}
-            <h1 className="gradient-text !mb-2">Terms of Service</h1> {/* Custom gradient for main title */}
+            <h1 className="gradient-text !mb-2">Terms of Service</h1>
             <p className="text-sm text-muted-foreground">Last updated: {new Date().toLocaleDateString()}</p>
             <p>
-              Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the
-              https://esim.com.mm website (the "Service") operated by eSIM Myanmar ("us", "we", or "our"). Your use of
-              our Service is also governed by our Privacy Policy and is subject to GSMA guidelines where applicable.
+              These Terms govern your access to and use of MeritRanker, an AI-powered platform that provides content
+              creation tools for educators and smart practice features for students preparing for Indian government job
+              examinations. By using the services, you agree to these Terms and to our Privacy Policy.
             </p>
+            <h2>Eligibility</h2>
             <p>
-              Your access to and use of the Service is conditioned on your acceptance of and compliance with these
-              Terms. These Terms apply to all visitors, users, and others who access or use the Service.
-            </p>
-            <p>
-              By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of
-              the terms then you may not access the Service.
-            </p>
-            <h2>eSIM Services</h2>
-            <p>
-              Our Service provides a platform for purchasing and managing eSIM profiles from various telecommunication
-              providers in Myanmar. The availability, quality, and specific terms of the eSIM services (data allowances,
-              validity, coverage, etc.) are determined by the respective telecom providers. We facilitate the delivery
-              of the eSIM profile (e.g., via QR code) and provide support for the activation process on compatible
-              devices. You are responsible for ensuring your device is eSIM compatible and network unlocked before
-              purchase. Compatibility information is provided on our website but should be verified with your device
-              manufacturer.
+              You must be at least 18 years old to use the services. Users under 18 may use the services only with
+              verifiable parental consent and supervision.
             </p>
             <h2>Accounts</h2>
             <p>
-              When you create an account with us, you must provide us information that is accurate, complete, and
-              current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate
-              termination of your account on our Service. You are responsible for safeguarding the password that you use
-              to access the Service and for any activities or actions under your password.
+              Provide accurate, current information and keep your credentials secure. You are responsible for all
+              activity under your account. Notify us promptly of any unauthorized access.
             </p>
-            <h2>Purchases and Payments</h2>
+            <h2>Services and Content</h2>
             <p>
-              If you wish to purchase any product or service made available through the Service ("Purchase"), you may be
-              asked to supply certain information relevant to your Purchase including, without limitation, your payment
-              information. All payments are processed through secure third-party payment gateways (e.g., MyanmarPay). We
-              do not store your full payment card details. Prices for our products are subject to change without notice.
+              MeritRanker provides tools to generate notes, slides, quizzes, mock tests, and study recommendations.
+              Output may include AI-generated content and is intended to support learning, not to guarantee outcomes or
+              facilitate cheating or misconduct in examinations. Educators are responsible for the accuracy and legality
+              of materials they publish.
+            </p>
+            <h2>User Content and License</h2>
+            <p>
+              You retain ownership of content you create or upload. You grant MeritRanker a non-exclusive, worldwide
+              license to host, store, display, and process your content as necessary to provide the services, enforce
+              policies, and improve features. You represent that you have the rights to the content you provide.
+            </p>
+            <h2>Acceptable Use</h2>
+            <ul>
+              <li>No content that is unlawful, defamatory, discriminatory, or infringing</li>
+              <li>No misuse to cheat on exams or circumvent exam rules</li>
+              <li>No reverse engineering, scraping, spamming, or introducing malicious code</li>
+              <li>No unauthorized access or interference with platform integrity</li>
+            </ul>
+            <h2>Payments and Subscriptions</h2>
+            <p>
+              Some features may require payment or a subscription. Prices and offers may change. Payments are processed
+              by secure third-party providers; we do not store full payment card details. Where applicable, refunds are
+              handled per the plan terms presented at checkout.
             </p>
             <h2>Intellectual Property</h2>
             <p>
-              The Service and its original content (excluding content provided by users or third-party telecom
-              providers), features, and functionality are and will remain the exclusive property of eSIM Myanmar and its
-              licensors. The Service is protected by copyright, trademark, and other laws of both Myanmar and foreign
-              countries. Our trademarks and trade dress may not be used in connection with any product or service
-              without the prior written consent of eSIM Myanmar.
+              The services, platform software, and trademarks (including “MeritRanker”) are the property of MeritRanker
+              or its licensors. Do not use our marks without prior written permission.
+            </p>
+            <h2>Privacy</h2>
+            <p>
+              Our processing of personal data is described in the Privacy Policy. By using the services, you consent to
+              that processing and acknowledge your rights under applicable laws.
+            </p>
+            <h2>Disclaimer</h2>
+            <p>
+              Services are provided on an “as is” and “as available” basis without warranties of any kind. We do not
+              warrant that outputs are error-free or that results will meet your expectations.
             </p>
             <h2>Limitation of Liability</h2>
             <p>
-              In no event shall eSIM Myanmar, nor its directors, employees, partners, agents, suppliers, or affiliates,
-              be liable for any indirect, incidental, special, consequential or punitive damages, including without
-              limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your
-              access to or use of or inability to access or use the Service; (ii.e.) any conduct or content of any third
-              party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or
-              alteration of your transmissions or content, whether based on warranty, contract, tort (including
-              negligence) or any other legal theory, whether or not we have been informed of the possibility of such
-              damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+              To the maximum extent permitted by law, MeritRanker and its affiliates shall not be liable for indirect,
+              incidental, special, consequential, or punitive damages, or loss of data or profits, arising from or
+              related to your use of the services.
             </p>
-            {/* ... Add all other necessary sections for a complete terms of service ... */}
-            <h2>Governing Law</h2>
+            <h2>Indemnity</h2>
             <p>
-              These Terms shall be governed and construed in accordance with the laws of the Union of Myanmar, without
-              regard to its conflict of law provisions.
+              You agree to indemnify and hold harmless MeritRanker from claims arising out of your content, your breach
+              of these Terms, or your violation of law or third-party rights.
+            </p>
+            <h2>Termination</h2>
+            <p>
+              We may suspend or terminate access if you violate these Terms or misuse the services. You may stop using
+              the services at any time. Certain provisions survive termination.
+            </p>
+            <h2>Governing Law and Dispute Resolution</h2>
+            <p>
+              These Terms are governed by the laws of India. Courts in New Delhi shall have jurisdiction. Before filing
+              a claim, the parties will attempt good-faith resolution within 30 days of notice.
             </p>
             <h2>Changes</h2>
             <p>
-              We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision
-              is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What
-              constitutes a material change will be determined at our sole discretion.
+              We may update these Terms to reflect changes to the services or legal requirements. Continued use
+              indicates acceptance of the updated Terms.
             </p>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about these Terms, please contact us:</p>
+            <h2>Contact</h2>
             <ul>
               <li>
-                By email: <a href="mailto:info@esim.com.mm">info@esim.com.mm</a>
+                Email: <a href="mailto:hello@meritranker.com">hello@meritranker.com</a>
               </li>
               <li>
-                By phone number: <a href="tel:+959650000172">09 6500 00172</a>
-              </li>
-              <li>
-                Through our website: <Link href="/contact">Contact Page</Link>
+                Contact page: <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </article>
