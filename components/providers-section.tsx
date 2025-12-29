@@ -9,23 +9,23 @@ import { AnimatedTechParticles } from "./animated-tech-patterns" // Using partic
 
 const providers = [
   {
-    name: "MPT",
-    description: "Myanmar's largest telecom provider with nationwide coverage",
+    name: "UPSC",
+    description: "Civil Services Examination - India's premier administrative service exam",
     color: "bg-blue-500", // Keep existing colors for brand association
   },
   {
-    name: "ATOM",
-    description: "Fast and reliable service with competitive pricing",
+    name: "SSC",
+    description: "Staff Selection Commission - Various government job opportunities",
     color: "bg-green-500",
   },
   {
-    name: "OOREDOO",
-    description: "High-speed data with excellent urban coverage",
+    name: "Banking",
+    description: "IBPS, SBI & other banking sector competitive exams",
     color: "bg-red-500",
   },
   {
-    name: "MYTEL",
-    description: "Affordable plans with strong rural coverage",
+    name: "Railway",
+    description: "RRB exams for various railway service positions",
     color: "bg-yellow-500",
   },
 ]
@@ -74,7 +74,7 @@ export function ProvidersSection() {
             Choose Your <span className="gradient-text">Provider</span>
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Select from Myanmar's leading telecom networks for your eSIM, ensuring broad coverage and reliable service.
+            Choose from India's most competitive government exams. Our AI is trained on comprehensive exam patterns and syllabi.
           </p>
         </motion.div>
 

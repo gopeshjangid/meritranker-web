@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ShoppingCart } from "lucide-react"
+import { Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function FloatingActionButton() {
@@ -11,13 +11,13 @@ export function FloatingActionButton() {
         asChild
         size="lg"
         className="rounded-full shadow-lg bg-cyan-500 hover:bg-cyan-600 text-white w-16 h-16 sm:w-auto sm:h-auto sm:px-6 sm:py-3"
-        aria-label="Buy eSIM"
+        aria-label="Get Started"
       >
-        <Link href="/buy-esim">
+        <Link href="/#early-access-signup">
           {" "}
-          {/* Link to your purchasing page */}
-          <ShoppingCart className="h-6 w-6 sm:mr-2" />
-          <span className="hidden sm:inline">Buy eSIM</span>
+          {/* Link to early access signup */}
+          <Sparkles className="h-6 w-6 sm:mr-2" />
+          <span className="hidden sm:inline">Get Started</span>
         </Link>
       </Button>
     </div>

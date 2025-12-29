@@ -1,9 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { Mail, Sparkles } from "lucide-react"
+import { Mail, Phone, Sparkles } from "lucide-react"
 
 export function EarlyAccessFooter() {
+    const phoneNumber = "+91 00000 00000"
+    const telLink = "tel:+910000000000"
     const emailAddress = "info@bytechminds.com"
     const mailtoLink = `mailto:${emailAddress}`
 
@@ -11,7 +13,7 @@ export function EarlyAccessFooter() {
         <footer className="bg-slate-950 border-t border-slate-800">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2">
@@ -43,13 +45,18 @@ export function EarlyAccessFooter() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/privacy-policy" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                                    Privacy Policy
+                                <Link href="/faq" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    FAQ
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/terms-of-service" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                                    Terms of Service
+                                <Link href="/contact" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    Contact
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/about-us" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    About Us
                                 </Link>
                             </li>
                         </ul>
@@ -81,16 +88,7 @@ export function EarlyAccessFooter() {
                 {/* Copyright */}
                 <div className="border-t border-slate-800 pt-8 text-center">
                     <p className="text-sm text-slate-500">
-                        © {new Date().getFullYear()} MeritRanker – AI Prep for Exams. All rights reserved.
-                    </p>
-                    <p className="text-xs text-slate-600 mt-2">
-                        <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors">
-                            Privacy
-                        </Link>
-                        {" • "}
-                        <Link href="/terms-of-service" className="hover:text-cyan-400 transition-colors">
-                            Terms
-                        </Link>
+                        © 2025 Bytech Minds Private Limited
                     </p>
                 </div>
             </div>

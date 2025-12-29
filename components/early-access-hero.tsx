@@ -247,7 +247,7 @@ export function EarlyAccessHero() {
                                 className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 rounded-full px-6 py-3"
                             >
                                 <span className="text-lg font-bold text-yellow-200">
-                                    🚀 Launching on 25th December 2025
+                                    🚀 New Year Launch: 5th Jan 2026
                                 </span>
                             </motion.div>
 
@@ -307,7 +307,7 @@ export function EarlyAccessHero() {
                                             </div>
                                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 rounded-xl p-3 mb-4">
                                                 <p className="text-base font-semibold text-yellow-200">
-                                                    🎁 <span className="text-white font-bold bg-yellow-600/50 px-2 py-0.5 rounded">50% OFF</span> for the first month!
+                                                    🎉 <span className="text-white font-bold bg-yellow-600/50 px-2 py-0.5 rounded">50% OFF</span> for the first month!
                                                 </p>
                                             </div>
                                         </div>

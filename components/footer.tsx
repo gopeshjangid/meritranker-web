@@ -22,6 +22,7 @@ export function Footer() {
   const supportLinks = [
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact Us" },
+    { href: "/about-us", label: "About Us" },
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/terms-of-service", label: "Terms of Service" },
   ]
@@ -122,7 +123,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border/50 mt-8 pt-8 text-center text-sm text-foreground/50">
-          <p>&copy; {new Date().getFullYear()} Meritranker. All rights reserved. Built on Vercel.</p>
+          <p>© 2025 Bytech Minds Private Limited</p>
         </div>
       </div>
     </footer>

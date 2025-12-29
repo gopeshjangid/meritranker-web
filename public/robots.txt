@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://esim.com.mm/sitemap.xml
+Sitemap: https://meritranker.com/sitemap.xml

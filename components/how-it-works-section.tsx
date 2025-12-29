@@ -7,23 +7,23 @@ import { AnimatedTechLines } from "./animated-tech-patterns" // Using lines for 
 const steps = [
   {
     icon: Smartphone,
-    title: "Choose Your eSIM",
-    description: "Select your preferred telecom provider and plan that suits your needs from our diverse range.",
+    title: "Sign Up & Connect",
+    description: "Create your account and connect your YouTube channel or upload your educational content.",
   },
   {
     icon: QrCode,
-    title: "Scan QR Code",
-    description: "Effortlessly scan the MyanmarPay QR code with your mobile wallet application.",
+    title: "AI Processing",
+    description: "Our AI analyzes your content and generates structured study materials automatically.",
   },
   {
     icon: CreditCard,
-    title: "Complete Payment",
-    description: "Securely confirm your payment through your preferred mobile wallet or card.",
+    title: "Customize & Edit",
+    description: "Review and customize the generated notes, quizzes, and slides to match your teaching style.",
   },
   {
     icon: CheckCircle2,
-    title: "Activate Instantly",
-    description: "Receive activation instructions via email and get connected within minutes to enjoy your service.",
+    title: "Publish & Share",
+    description: "Publish your enhanced content and share it with students across multiple platforms.",
   },
 ]
 
@@ -69,7 +69,7 @@ export function HowItWorksSection() {
             How It <span className="gradient-text">Works</span>
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Getting your eSIM is a breeze with our straightforward process. Follow these simple steps to connect.
+            Transform your educational content creation with our AI-powered platform. Follow these simple steps to get started.
           </p>
         </motion.div>
 

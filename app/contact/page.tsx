@@ -2,34 +2,34 @@ import { ContactForm } from "@/components/contact-form" // Assuming ContactForm 
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 import type { Metadata } from "next"
-import { Mail, Phone, GlobeIcon, MessageSquare } from "lucide-react" // Renamed Globe to avoid conflict
+import { Mail, GlobeIcon } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contact Us - eSIM Myanmar",
+  title: "Contact Us | MeritRanker",
   description:
-    "Get in touch with eSIM Myanmar for support, inquiries, or partnership opportunities. Call us at 09650000172 or email info@esim.com.mm.",
+    "Get in touch with MeritRanker for support, inquiries, or partnership opportunities. Email us at support@meritranker.com or info@meritranker.com.",
   openGraph: {
-    title: "Contact Us - eSIM Myanmar",
-    description: "Reach out to eSIM Myanmar for all your eSIM needs and questions.",
-    url: "https://esim.com.mm/contact",
-    siteName: "eSIM Myanmar",
+    title: "Contact Us | MeritRanker",
+    description: "Reach out to MeritRanker for all your AI learning platform needs and questions.",
+    url: "https://meritranker.com/contact",
+    siteName: "MeritRanker",
     type: "website",
   },
   alternates: {
-    canonical: "https://esim.com.mm/contact",
+    canonical: "https://meritranker.com/contact",
   },
 }
 
 const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Contact Us - eSIM Myanmar",
+  name: "Contact Us | MeritRanker",
   description:
-    "Contact eSIM Myanmar for any inquiries or support regarding our eSIM services. Reach out to us via our contact form, email, or phone.",
-  url: "https://esim.com.mm/contact",
+    "Contact MeritRanker for any inquiries or support regarding our AI-powered learning platform. Reach out to us via our contact form or email.",
+  url: "https://meritranker.com/contact",
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://esim.com.mm/contact",
+    "@id": "https://meritranker.com/contact",
   },
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -38,13 +38,13 @@ const contactPageSchema = {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://esim.com.mm/",
+        item: "https://meritranker.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Contact Us",
-        item: "https://esim.com.mm/contact",
+        item: "https://meritranker.com/contact",
       },
     ],
   },
@@ -53,28 +53,22 @@ const contactPageSchema = {
 export default function ContactPage() {
   const contactDetails = [
     {
-      icon: Phone,
-      label: "Phone",
-      value: "09 6500 00172",
-      href: "tel:+959650000172",
+      icon: Mail,
+      label: "Support Email",
+      value: "support@meritranker.com",
+      href: "mailto:support@meritranker.com",
     },
     {
       icon: Mail,
-      label: "Email",
-      value: "info@esim.com.mm",
-      href: "mailto:info@esim.com.mm",
+      label: "Info Email",
+      value: "info@meritranker.com",
+      href: "mailto:info@meritranker.com",
     },
     {
       icon: GlobeIcon,
       label: "Website",
-      value: "esim.com.mm",
-      href: "https://esim.com.mm",
-    },
-    {
-      icon: MessageSquare, // Using MessageSquare for generic social media
-      label: "Social",
-      value: "@eSIMMyanmar",
-      href: "https://x.com/eSIMMyanmar", // Replace with actual social media link if available
+      value: "meritranker.com",
+      href: "https://meritranker.com",
     },
   ]
 
@@ -89,8 +83,8 @@ export default function ContactPage() {
               <Mail className="mx-auto h-16 w-16 text-primary mb-4" />
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight gradient-text mb-4">Get in Touch</h1>
               <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto">
-                We're here to help! Whether you have a question about our eSIMs, need support, or want to discuss
-                partnership opportunities, feel free to reach out.
+                We're here to help! Whether you have a question about our AI learning platform, need support for exam
+                preparation, or want to discuss partnership opportunities, feel free to reach out.
               </p>
             </header>
 

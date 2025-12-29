@@ -49,7 +49,7 @@ export function AnimatedPhone() {
                   animate={{ opacity: [0.7, 1, 0.7] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                 >
-                  eSIM Myanmar
+                  MeritRanker
                 </motion.div>
                 <motion.div className="w-8 h-8 rounded-full bg-primary/30" whileHover={{ scale: 1.1 }} />
               </div>
@@ -70,7 +70,7 @@ export function AnimatedPhone() {
                 >
                   <div className="text-center">
                     <div className="text-xs font-bold text-primary mb-1">NEW</div>
-                    <div className="text-sm font-bold text-white mb-2">Get Your eSIM Now</div>
+                    <div className="text-sm font-bold text-white mb-2">Get Started with MeritRanker</div>
                     <motion.div
                       className="mx-auto w-20 h-6 rounded-full bg-primary/30 text-xs flex items-center justify-center text-white"
                       whileHover={{ scale: 1.05 }}
